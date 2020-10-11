@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+
+import 'package:estados_app/pages/pagina1_page.dart';
+import 'package:estados_app/pages/pagina2_page.dart';
  
 void main() => runApp(MyApp());
  
@@ -7,16 +10,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Material App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Material App Bar'),
-        ),
-        body: Center(
-          child: Container(
-            child: Text('Hello World'),
-          ),
-        ),
-      ),
+      debugShowCheckedModeBanner: false,
+      initialRoute: "pagina1",
+      routes: {
+        "pagina1": (_) => Pagina1Page(), 
+        "pagina2" : (_) => Pagina2Page(),
+
+      },
     );
   }
 }
