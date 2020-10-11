@@ -1,10 +1,13 @@
+import 'package:meta/meta.dart';
+
 class Usuario{
   String nombre;
-  String edad;
+  int edad;
   List<String> profesiones;
 
 
-  Usuario({this.nombre, this.edad, this.profesiones});
+  Usuario({@required this.nombre,@required this.edad, this.profesiones})
+  :assert (nombre != null);//obrligar a poner nombre si no lanz error
 
 
 }
