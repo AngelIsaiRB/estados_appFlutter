@@ -9,4 +9,15 @@ abstract class UsuarioState{
 class UsuarioInitial extends UsuarioState{
   final existeUsuario=false;
 
+  @override
+  String toString() {
+    return "usuarioinicial : existeusuario: false";    
+  }
+}
+
+class UsuarioActivo extends UsuarioState{
+  final existeUsuario=false;
+  final Usuario usuario;
+
+  UsuarioActivo(this.usuario);
 }
