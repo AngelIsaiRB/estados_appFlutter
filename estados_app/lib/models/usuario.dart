@@ -6,5 +6,4 @@ class Usuario{
 
   Usuario({this.nombre, this.edad, this.profesiones});
 
-
 }
